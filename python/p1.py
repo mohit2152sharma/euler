@@ -7,9 +7,7 @@
 # naive solution
 number = set()
 for i in range(1000):
-    if i % 3 == 0:
-        number.add(i)
-    if i % 5 == 0:
+    if i % 3 == 0 or i % 5 == 0:
         number.add(i)
 
 print(sum(number))
